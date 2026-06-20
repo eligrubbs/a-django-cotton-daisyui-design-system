@@ -30,6 +30,12 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# Add parent directory of this repo to sys.path so we can install `design_system`
+# without having to do complicated pip install -e stuff
+import sys
+if str(BASE_DIR.parent) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR.parent))
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,6 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #
+    "django_cotton",
+    "design_system",
 ]
 
 MIDDLEWARE = [

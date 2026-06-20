@@ -30,5 +30,6 @@ Combining the two packages means making decisions for everyone who is going to u
 ### Decisions we do NOT make
 
 1. What icon pack to use
+    - iconify? manual svg? cotton-icons? It doesn't matter! You should be able to empowered to use whatever icons you prefer
 2. How you bundle / organize your css
 
