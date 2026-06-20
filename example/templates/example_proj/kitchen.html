@@ -1,9 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <title>Hello</title>
+
+    {# Tailwind #}
+    <link rel="stylesheet" href="{% static 'vite/css/app.css' %}">
   </head>
   <body>
+    <script src="{% static 'vite/js/index.js' %}"></script>
     <p>Hello World</p>
 
     <c-ds.test></c-ds.test>

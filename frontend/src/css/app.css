@@ -1,0 +1,12 @@
+/* Root Styling */
+@import "@/src/css/typography.css";
+@import "@/src/css/tailwind.css";
+@import "@/src/css/daisyui.css";
+
+
+/****  Plugins  ****/
+
+/* Iconify (Lucide icons) */
+@plugin "@iconify/tailwind4" {
+    prefixes: lucide;
+}

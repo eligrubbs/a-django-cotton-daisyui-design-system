@@ -1,0 +1,19 @@
+{
+  "name": "js-css-vite-build",
+  "version": "1.0.0",
+  "description": "A small repo where I play around with mixing django cotton and DaisyUI",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "watch": "vite build --watch"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.111",
+    "@iconify/tailwind4": "^1.2.3",
+    "@tailwindcss/vite": "^4.3.0",
+    "@types/node": "^25.9.1",
+    "daisyui": "^5.5.20",
+    "tailwindcss": "^4.3.0",
+    "vite": "^8.0.16"
+  }
+}
