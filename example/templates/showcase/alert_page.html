@@ -1,0 +1,64 @@
+{% extends "showcase/base.html" %}
+
+{% block title %}Alert Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Alerts</h2>
+    <p class="text-base-content/70">Contextual feedback messages.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+    <div class="space-y-4">
+        <h3 class="text-lg font-semibold mb-4">Variants</h3>
+        
+        <c-ds.alert variant="primary">
+            <div slot="icon_slot"><span class="badge badge-primary badge-xs"></span></div>
+            <div slot="slot_content">This is a primary alert message.</div>
+        </c-ds.alert>
+
+        <c-ds.alert variant="secondary">
+             <div slot="icon_slot"><span class="badge badge-secondary badge-xs"></span></div>
+             <div slot="slot_content">This is a secondary alert message.</div>
+        </c-ds.alert>
+
+        <c-ds.alert variant="accent">
+             <div slot="icon_slot"><span class="badge badge-accent badge-xs"></span></div>
+             <div slot="slot_content">This is an accent alert message.</div>
+        </c-ds.alert>
+
+        <c-ds.alert variant="neutral">
+             <div slot="icon_slot"><span class="badge badge-neutral badge-xs"></span></div>
+             <div slot="slot_content">This is a neutral alert message.</div>
+        </c-ds.alert>
+
+        <c-ds.alert variant="info">
+             <div slot="icon_slot"><span class="badge badge-info badge-xs"></span></div>
+             <div slot="slot_content">This is an info alert message.</div>
+        </c-ds.alert>
+
+        <c-ds.alert variant="success">
+             <div slot="icon_slot"><span class="badge badge-success badge-xs"></span></div>
+             <div slot="slot_content">This is a success alert message.</div>
+        </c-ds.alert>
+
+        <c-ds.alert variant="warning">
+             <div slot="icon_slot"><span class="badge badge-warning badge-xs"></span></div>
+             <div slot="slot_content">This is a warning alert message.</div>
+        </c-ds.alert>
+
+        <c-ds.alert variant="error">
+             <div slot="icon_slot"><span class="badge badge-error badge-xs"></span></div>
+             <div slot="slot_content">This is an error alert message.</div>
+        </c-ds.alert>
+    </div>
+
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Modifiers</h3>
+        <div class="space-y-4">
+            <c-ds.alert variant="info" class="shadow-lg">Shadow Large Alert</c-ds.alert>
+            <c-ds.alert variant="success" class="rounded-none">No Border Radius Alert</c-ds.alert>
+        </div>
+    </div>
+</section>
+{% endblock %}

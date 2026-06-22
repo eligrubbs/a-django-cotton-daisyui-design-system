@@ -1,0 +1,53 @@
+{% comment %}
+DaisyUI Card Component
+
+https://daisyui.com/components/card/
+{% endcomment %}
+
+<c-vars
+    class=""
+    variant=""
+    style_=""
+    size=""
+    modifier=""
+    :variantClasses="{
+        'bordered': 'card-bordered',
+        'shadow-sm': 'shadow-sm',
+        'shadow-md': 'shadow-md',
+        'shadow-lg': 'shadow-lg',
+        'shadow-xl': 'shadow-xl',
+        'shadow-2xl': 'shadow-2xl'
+    }"
+    :styleClasses="{
+        'border': 'card-bordered',
+        'dash': 'card-dash'
+    }"
+    :sizeClasses="{
+        'xs': 'card-xs',
+        'sm': 'card-sm',
+        'md': 'card-md',
+        'lg': 'card-lg',
+        'xl': 'card-xl'
+    }"
+    :modifierClasses="{
+        'side': 'card-side',
+        'image-full': 'card-image-full'
+    }"
+/>
+
+<div class="card {{ variantClasses|get_item:variant }} {{ styleClasses|get_item:style_ }} {{ sizeClasses|get_item:size }} {{ modifierClasses|get_item:modifier }} {{ class }}">
+    <figure>
+        {{ image_slot }}
+    </figure>
+    <div class="card-body">
+        <h2 class="card-title">
+            {{ title_slot }}
+        </h2>
+        <p>
+            {{ slot }}
+        </p>
+        <div class="card-actions justify-end">
+            {{ actions_slot }}
+        </div>
+    </div>
+</div>

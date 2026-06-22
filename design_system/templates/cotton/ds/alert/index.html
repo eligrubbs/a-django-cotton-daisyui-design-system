@@ -1,0 +1,52 @@
+{% comment %}
+DaisyUI Alert Component
+
+https://daisyui.com/components/alert/
+{% endcomment %}
+
+<c-vars
+    class=""
+    variant=""
+    style_=""
+    direction=""
+    :variantClasses="{
+        'info': 'alert-info',
+        'success': 'alert-success',
+        'warning': 'alert-warning',
+        'error': 'alert-error',
+        'primary': 'alert-primary',
+        'secondary': 'alert-secondary',
+        'accent': 'alert-accent',
+        'neutral': 'alert-neutral'
+    }"
+    :styleClasses="{
+        'outline': 'alert-outline',
+        'dash': 'alert-dash',
+        'soft': 'alert-soft'
+    }"
+    :directionClasses="{
+        'vertical': 'alert-vertical',
+        'horizontal': 'alert-horizontal'
+    }"
+    :classClasses="{
+        'shadow-lg': 'shadow-lg',
+        'rounded-none': 'rounded-none'
+    }"
+/>
+
+<div
+    class="
+        alert
+        {% if variant %} {{ variantClasses|get_item:variant }}{% endif %}
+        {% if style_ %} {{ styleClasses|get_item:style_ }}{% endif %}
+        {% if direction %} {{ directionClasses|get_item:direction }}{% endif %}
+        {{ class }}
+    "
+>
+    <div class="slot-icon">
+        {{ icon_slot }}
+    </div>
+    <div class="slot-content">
+        {{ slot }}
+    </div>
+</div>

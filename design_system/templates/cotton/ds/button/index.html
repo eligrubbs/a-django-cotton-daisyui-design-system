@@ -10,7 +10,7 @@ https://daisyui.com/components/button/
     class=""
     as="button"
     variant=""
-    btnStyle=""
+    style_=""
     behavior=""
     size="md"
     modifier=""
@@ -24,7 +24,7 @@ https://daisyui.com/components/button/
         'warning': 'btn-warning',
         'error': 'btn-error'
     }"
-    :btnStyleClasses="{
+    :styleClasses="{
         'outline': 'btn-outline',
         'dash': 'btn-dash',
         'soft': 'btn-soft',
@@ -50,16 +50,14 @@ https://daisyui.com/components/button/
     }"
 />
 
-{% load ds_tags %}
-
 <{{ as }}
     class="
-        {% if btnStyle != 'bare' %}btn
-        {{ variantClasses|get_dict_item:variant }}
-        {{ btnStyleClasses|get_dict_item:btnStyle }}
-        {{ behaviorClasses|get_dict_item:behavior }}
-        {{ sizeClasses|get_dict_item:size }}
-        {{ modifierClasses|get_dict_item:modifier }}{% endif %}
+        btn
+        {{ variantClasses|get_item:variant }}
+        {{ styleClasses|get_item:style_ }}
+        {{ behaviorClasses|get_item:behavior }}
+        {{ sizeClasses|get_item:size }}
+        {{ modifierClasses|get_item:modifier }}
         {{ class }}
     "
 >

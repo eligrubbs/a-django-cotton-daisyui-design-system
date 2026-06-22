@@ -1,0 +1,78 @@
+{% extends "showcase/base.html" %}
+
+{% block title %}Checkbox Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Checkboxes</h2>
+    <p class="text-base-content/70">Selection controls.</p>
+</div>
+
+<section class="space-y-8 bg-base-10_0 p-6 rounded-box shadow-sm border border-base-300">
+    <div class="space-y-4">
+        <h3 class="text-lg font-semibold mb-4">Variants</h3>
+        <div class="flex flex-wrap gap-6 items-center">
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox variant="primary" />
+                <span>Primary</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox variant="secondary" />
+                <span>Secondary</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox variant="accent" />
+                <span>Accent</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox variant="info" />
+                <span>Info</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox variant="success" />
+                <span>Success</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox variant="warning" />
+                <span>Warning</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox variant="error" />
+                <span>Error</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="space-y-4 mt-8">
+        <h3 class="text-lg font-semibold mb-4">Sizes</h3>
+        <div class="flex flex-wrap gap-6 items-center">
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox size="sm" />
+                <span>Small</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox size="md" />
+                <span>Medium</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox size="lg" />
+                <span>Large</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="space-y-4 mt-8">
+        <h3 class="text-lg font-semibold mb-4">States</h3>
+        <div class="flex flex-wrap gap-6 items-center">
+            <label class="flex items-center gap-2 cursor-pointer">
+                <c-ds.checkbox checked="true" />
+                <span>Checked</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer opacity-50">
+                <c-ds.checkbox disabled="true" />
+                <span>Disabled</span>
+            </label>
+        </div>
+    </div>
+</section>
+{% endblock %}

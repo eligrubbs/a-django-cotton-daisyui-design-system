@@ -16,10 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.views.generic import TemplateView
 
 from example.views import kitchen_sink_view
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", kitchen_sink_view, name="kitchen_sink")
+    path("", kitchen_sink_view, name="kitchen_sink"),
+    # Showcase
+    path('showcase/button/', TemplateView.as_view(template_name='showcase/button_page.html'), name='showcase_button'),
+    path('showcase/badge/', TemplateView.as_view(template_name='showcase/badge_page.html'), name='showcase_badge'),
+    path('showcase/alert/', TemplateView.as_view(template_name='showcase/alert_page.html'), name='showcase_alert'),
+    path('showcase/card/', TemplateView.as_view(template_name='showcase/card_page.html'), name='showcase_card'),
+    path('showcase/checkbox/', TemplateView.as_view(template_name='showcase/checkbox_page.html'), name='showcase_checkbox'),
+    path('showcase/input/', TemplateView.as_view(template_name='showcase/input_page.html'), name='showcase_input'),
 ]

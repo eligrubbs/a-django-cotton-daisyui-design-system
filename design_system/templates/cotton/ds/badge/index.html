@@ -1,0 +1,48 @@
+{% comment %}
+DaisyUI Badge Component
+
+https://daisyui.com/components/badge/
+{% endcomment %}
+
+<c-vars
+    class=""
+    as="span"
+    variant=""
+    style_=""
+    size="md"
+    :variantClasses="{
+        'primary': 'badge-primary',
+        'secondary': 'badge-secondary',
+        'accent': 'badge-accent',
+        'info': 'badge-info',
+        'success': 'badge-success',
+        'warning': 'badge-warning',
+        'error': 'badge-error',
+        'neutral': 'badge-neutral'
+    }"
+    :styleClasses="{
+        'outline': 'badge-outline',
+        'dash': 'badge-dash',
+        'soft': 'badge-soft',
+        'ghost': 'badge-ghost'
+    }"
+    :sizeClasses="{
+        'xs': 'badge-xs',
+        'sm': 'badge-sm',
+        'md': 'badge-md',
+        'lg': 'badge-lg',
+        'xl': 'badge-xl'
+    }"
+/>
+
+<{{ as }}
+    class="
+        badge
+        {% if variant %} {{ variantClasses|get_item:variant }}{% endif %}
+        {% if style_ %} {{ styleClasses|get_item:style_ }}{% endif %}
+        {% if size %} {{ sizeClasses|get_item:size }}{% endif %}
+        {{ class }}
+    "
+>
+    {{ slot }}
+</{{ as }}>

@@ -1,0 +1,35 @@
+{% extends "showcase/base.html" %}
+
+{% block title %}Input Showcase{% endblock %}
+
+{% block content %}
+<div class="mb-8">
+    <h2 class="text-3xl font-bold mb-2">Inputs</h2>
+    <p class="text-base-content/70">Form input elements.</p>
+</div>
+
+<section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
+    <div class="space-y-4">
+        <h3 class="text-lg font-semibold mb-4">Variants</h3>
+        <div class="flex flex-col gap-4 max-w-md">
+            <c-ds.input variant="primary" placeholder="Primary Input" />
+            <c-ds.input variant="secondary" placeholder="Secondary Input" />
+            <c-ds.input variant="accent" placeholder="Accent Input" />
+            <c-ds.input variant="info" placeholder="Info Input" />
+            <c-ds.input variant="success" placeholder="Success Input" />
+            <c-ds.input variant="warning" placeholder="Warning Input" />
+            <c-ds.input variant="error" placeholder="Error Input" />
+            <c-ds.input variant="neutral" placeholder="Neutral Input" />
+        </div>
+    </div>
+
+    <div class="space-y-4">
+        <h3 class="text-lg font-semibold mb-4">Sizes</h3>
+        <div class="flex flex-col gap-4 max-w-md">
+            <c-ds.input size="sm" placeholder="Small Input" />
+            <c-ds.input size="md" placeholder="Medium Input" />
+            <c-ds.input size="lg" placeholder="Large Input" />
+        </div>
+    </div>
+</section>
+{% endblock %}

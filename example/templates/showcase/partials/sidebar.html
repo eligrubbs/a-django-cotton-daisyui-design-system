@@ -1,0 +1,23 @@
+<div class="p-4">
+    <h1 class="text-xl font-bold mb-6 px-2 text-primary">Design System</h1>
+</div>
+
+<ul class="menu menu-md w-full p-0">
+    <li class="menu-title">Components</li>
+    <li><a href="{% url 'showcase_button' %}">Button</a></li>
+    <li>
+    <a>
+        <details open>
+            <summary>Form Elements</summary>
+        </details>
+    </a>
+        <ul>
+            <li><a href="{% url 'showcase_badge' %}">Badge</a></li>
+            <li><a href="{% url 'showcase_input' %}">Input</a></li>
+            <li><a href="{% url 'showcase_checkbox' %}">Checkbox</a></li>
+        </ul>
+    </li>
+    <li class="menu-title mt-4">Layouts & Feedback</li>
+    <li><a href="{% url 'showcase_alert' %}">Alert</a></li>
+    <li><a href="{% url 'showcase_card' %}">Card</a></li>
+</ul>

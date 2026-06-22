@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <title>{% block title %}Design System Showcase{% endblock %}</title>
+    {# Tailwind #}
+    <link rel="stylesheet" href="{% static 'vite/css/app.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="flex h-screen bg-base-200 text-base-content overflow-hidden">
+
+    {# Sidebar #}
+    <aside class="w-64 h-full bg-base-100 border-r border-base-300 overflow-y-auto hidden md:block">
+        {% include "showcase/partials/sidebar.html" %}
+    </aside>
+
+    {# Main Content #}
+    <main class="flex-1 h-full overflow-y-auto p-8">
+        <div class="max-w-5xl mx-auto">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+
+    <script src="{% static 'vite/js/index.js' %}"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>
