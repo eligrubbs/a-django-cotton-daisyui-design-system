@@ -3,3 +3,7 @@
 
 /* Tailwind Source traverses from file path. */
 @source "../../../**/*.html";
+
+
+/* Make sure to use dark selector when a dark theme is applied */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));

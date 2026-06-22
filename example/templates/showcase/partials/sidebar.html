@@ -1,5 +1,13 @@
 <div class="p-4">
     <h1 class="text-xl font-bold mb-6 px-2 text-primary">Design System</h1>
+    <button aria-label="Toggle Theme" class="btn btn-outline btn-sm btn-square border-base-300 bg-base-100 shadow-hard-1 shadow-base-300 relative overflow-hidden rounded-none" data-theme-control>
+    <span
+        class="iconify lucide--sun absolute size-4.5 -translate-y-4 opacity-0 transition-all duration-300 group-data-[theme=light]/html:translate-y-0 group-data-[theme=light]/html:opacity-100"></span>
+    <span
+        class="iconify lucide--moon absolute size-4.5 translate-y-4 opacity-0 transition-all duration-300 group-data-[theme=dark]/html:translate-y-0 group-data-[theme=dark]/html:opacity-100"></span>
+    <span
+        class="iconify lucide--monitor absolute size-4.5 translate-x-4 opacity-0 transition-all duration-300 group-[&:not([data-theme])]/html:translate-x-0 group-[&:not([data-theme])]/html:opacity-100"></span>
+</button>
 </div>
 
 <ul class="menu menu-md w-full p-0">

@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" class="group/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale">
@@ -8,6 +8,16 @@
     {# Tailwind #}
     <link rel="stylesheet" href="{% static 'vite/css/app.css' %}">
     {% block extra_head %}{% endblock %}
+
+    <script>
+        try {
+            const theme = JSON.parse(localStorage.getItem("__app_config__") || "{}").theme
+            if (theme && theme !== "system") document.documentElement.setAttribute("data-theme", theme)
+        } catch (err) {
+            console.log(err)
+        }
+    </script>
+    
 </head>
 <body class="flex h-screen bg-base-200 text-base-content overflow-hidden">
 
