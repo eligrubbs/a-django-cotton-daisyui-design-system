@@ -15,6 +15,7 @@ https://daisyui.com/components/button/
     size="md"
     modifier=""
     :variantClasses="{
+        '': '',
         'neutral': 'btn-neutral',
         'primary': 'btn-primary',
         'secondary': 'btn-secondary',
@@ -25,6 +26,7 @@ https://daisyui.com/components/button/
         'error': 'btn-error'
     }"
     :styleClasses="{
+        '': '',
         'outline': 'btn-outline',
         'dash': 'btn-dash',
         'soft': 'btn-soft',
@@ -32,10 +34,12 @@ https://daisyui.com/components/button/
         'link': 'btn-link'
     }"
     :behaviorClasses="{
+        '': '',
         'active': 'btn-active',
         'disabled': 'btn-disabled'
     }"
     :sizeClasses="{
+        '': '',
         'xs': 'btn-xs',
         'sm': 'btn-sm',
         'md': 'btn-md',
@@ -43,6 +47,7 @@ https://daisyui.com/components/button/
         'xl': 'btn-xl'
     }"
     :modifierClasses="{
+        '': '',
         'wide': 'btn-wide',
         'block': 'btn-block',
         'square': 'btn-square',
@@ -60,6 +65,7 @@ https://daisyui.com/components/button/
         {{ modifierClasses|get_item:modifier }}
         {{ class }}
     "
+    {{ attrs }}
 >
 
     {{ slot }}

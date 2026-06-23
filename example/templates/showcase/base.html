@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en" class="group/html">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale">
@@ -9,15 +9,9 @@
     <link rel="stylesheet" href="{% static 'vite/css/app.css' %}">
     {% block extra_head %}{% endblock %}
 
-    <script>
-        try {
-            const theme = JSON.parse(localStorage.getItem("__app_config__") || "{}").theme
-            if (theme && theme !== "system") document.documentElement.setAttribute("data-theme", theme)
-        } catch (err) {
-            console.log(err)
-        }
-    </script>
-    
+
+    <c-ds.theme-switcher.head-js />
+
 </head>
 <body class="flex h-screen bg-base-200 text-base-content overflow-hidden">
 
@@ -34,7 +28,7 @@
         </div>
     </main>
 
-    <script src="{% static 'vite/js/index.js' %}"></script>
+    <c-ds.theme-switcher.footer-js />
     {% block extra_scripts %}{% endblock %}
 </body>
 </html>

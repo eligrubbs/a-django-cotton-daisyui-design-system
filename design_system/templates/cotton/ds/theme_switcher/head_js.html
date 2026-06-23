@@ -1,0 +1,14 @@
+{% comment %}
+Vanilla Javascript snippet for saving the current theme to the global html tag of the page.
+
+Should go in the <head> section of the page
+{% endcomment %}
+
+<script>
+    try {
+        const theme = JSON.parse(localStorage.getItem("__app_config__") || "{}").theme
+        if (theme && theme !== "system") document.documentElement.setAttribute("data-theme", theme)
+    } catch (err) {
+        console.log(err)
+    }
+</script>

@@ -1,0 +1,15 @@
+{% comment %}
+Theme Switcher Button
+
+Assumes that you have iconify installed to manage your icons.
+
+{% endcomment %}
+
+<c-ds.button style_="" size="sm" modifier="square" class="overflow-hidden relative" aria-label="Toggle Theme" data-theme-control>
+  <span
+      class="iconify lucide--sun absolute size-4.5 -translate-y-4 opacity-0 transition-all duration-300 [html[data-theme=light]_&]:translate-y-0 [html[data-theme=light]_&]:opacity-100"></span>
+  <span
+      class="iconify lucide--moon absolute size-4.5 translate-y-4 opacity-0 transition-all duration-300 [html[data-theme=dark]_&]:translate-y-0 [html[data-theme=dark]_&]:opacity-100"></span>
+  <span
+      class="iconify lucide--monitor absolute size-4.5 translate-x-4 opacity-0 transition-all duration-300 [html:not([data-theme])_&]:translate-x-0 [html:not([data-theme])_&]:opacity-100"></span>
+</c-ds.button>
