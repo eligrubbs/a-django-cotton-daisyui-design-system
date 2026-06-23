@@ -21,23 +21,23 @@
                 </div>
                 <p>This is a basic card with an image, title, and some text content.</p>
                 <div slot="actions_slot" class="card-actions justify-end">
-                    <c-ds.button variant="primary" size="sm">Buy Now</c-ds.button>
+                    <c-ds.button color="primary" size="sm">Buy Now</c-ds.button>
                 </div>
             </c-ds.card>
         </div>
 
         <div>
             <h3 class="text-lg font-semibold mb-4">Bordered Card</h3>
-            <c-ds.card variant="bordered">
+            <c-ds.card color="bordered">
                 <c-slot name="image_slot">
                   <img src="https://img.daisyui.com/images/stock/photo-1606107557199-0a55a0b9m243.webp" alt="Showcase Image" />
                 </c-slot>
                 <c-slot name="title_slot">
                     <h2 class="card-title">Bordered Card</h2>
                 </c-slot>
-                <p>This card has a visible border using the bordered variant.</p>
+                <p>This card has a visible border using the bordered color.</p>
                 <c-slot name="actions_slot" class="card-actions justify-end">
-                    <c-ds.button variant="primary" size="sm">Buy Now</c-ds.button>
+                    <c-ds.button color="primary" size="sm">Buy Now</c-ds.button>
                 </c-slot>
             </c-ds.card>
         </div>
@@ -46,9 +46,9 @@
     <div>
         <h3 class="text-lg font-semibold mb-4">Shadow Variants</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <c-ds.card variant="shadow-sm"><div slot="title_slot"><h2 class="card-title">Shadow SM</h2></div><p>Small shadow.</p></c-ds.card>
-            <c-ds.card variant="shadow-md"><div slot="title_slot"><h2 class="card-title">Shadow MD</h2></div><p>Medium shadow.</p></c-ds.card>
-            <c-ds.card variant="shadow-lg"><div slot="title_slot"><h2 class="card-title">Shadow LG</h2></div><p>Large shadow.</p></c-ds.card>
+            <c-ds.card color="shadow-sm"><div slot="title_slot"><h2 class="card-title">Shadow SM</h2></div><p>Small shadow.</p></c-ds.card>
+            <c-ds.card color="shadow-md"><div slot="title_slot"><h2 class="card-title">Shadow MD</h2></div><p>Medium shadow.</p></c-ds.card>
+            <c-ds.card color="shadow-lg"><div slot="title_slot"><h2 class="card-title">Shadow LG</h2></div><p>Large shadow.</p></c-ds.card>
         </div>
     </div>
 </section>

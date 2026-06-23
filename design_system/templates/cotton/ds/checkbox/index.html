@@ -8,11 +8,11 @@ https://daisyui.com/components/checkbox/
     class=""
     as="input"
     type="checkbox"
-    variant=""
+    color=""
     size="md"
     checked="false"
     disabled="false"
-    :variantClasses="{
+    :colorClasses="{
         'primary': 'checkbox-primary',
         'secondary': 'checkbox-secondary',
         'accent': 'checkbox-accent',
@@ -37,7 +37,7 @@ https://daisyui.com/components/checkbox/
     {% if disabled == 'autofocus' or disabled == 'true' %}disabled{% endif %}
     class="
         checkbox
-        {{ variantClasses|get_item:variant }}
+        {{ colorClasses|get_item:color }}
         {{ sizeClasses|get_item:size }}
         {{ class }}
     "

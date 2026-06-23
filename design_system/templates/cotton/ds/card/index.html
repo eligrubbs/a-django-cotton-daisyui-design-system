@@ -6,11 +6,11 @@ https://daisyui.com/components/card/
 
 <c-vars
     class=""
-    variant=""
+    color=""
     style_=""
     size=""
     modifier=""
-    :variantClasses="{
+    :colorClasses="{
         'bordered': 'card-bordered',
         'shadow-sm': 'shadow-sm',
         'shadow-md': 'shadow-md',
@@ -35,7 +35,7 @@ https://daisyui.com/components/card/
     }"
 />
 
-<div class="card {{ variantClasses|get_item:variant }} {{ styleClasses|get_item:style_ }} {{ sizeClasses|get_item:size }} {{ modifierClasses|get_item:modifier }} {{ class }}" {{ attrs }} >
+<div class="card {{ colorClasses|get_item:color }} {{ styleClasses|get_item:style_ }} {{ sizeClasses|get_item:size }} {{ modifierClasses|get_item:modifier }} {{ class }}" {{ attrs }} >
     <figure>
         {{ image_slot }}
     </figure>

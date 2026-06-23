@@ -6,10 +6,10 @@ https://daisyui.com/components/alert/
 
 <c-vars
     class=""
-    variant=""
+    color=""
     style_=""
     direction=""
-    :variantClasses="{
+    :colorClasses="{
         'info': 'alert-info',
         'success': 'alert-success',
         'warning': 'alert-warning',
@@ -37,7 +37,7 @@ https://daisyui.com/components/alert/
 <div
     class="
         alert
-        {% if variant %} {{ variantClasses|get_item:variant }}{% endif %}
+        {% if color %} {{ colorClasses|get_item:color }}{% endif %}
         {% if style_ %} {{ styleClasses|get_item:style_ }}{% endif %}
         {% if direction %} {{ directionClasses|get_item:direction }}{% endif %}
         {{ class }}

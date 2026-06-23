@@ -8,11 +8,11 @@ https://daisyui.com/components/input/
     class=""
     as="input"
     type="text"
-    variant=""
+    color=""
     style_=""
     size="md"
     placeholder=""
-    :variantClasses="{
+    :colorClasses="{
         'primary': 'input-primary',
         'control': 'input-control',
         'secondary': 'input-secondary',
@@ -38,7 +38,7 @@ https://daisyui.com/components/input/
 <{{ as }}
     type="{{ type }}"
     class="
-        {{ variantClasses|get_item:variant }}
+        {{ colorClasses|get_item:color }}
         {{ styleClasses|get_item:style_ }}
         {{ sizeClasses|get_item:size }}
         {{ class }}

@@ -7,10 +7,10 @@ https://daisyui.com/components/badge/
 <c-vars
     class=""
     as="span"
-    variant=""
+    color=""
     style_=""
     size="md"
-    :variantClasses="{
+    :colorClasses="{
         'primary': 'badge-primary',
         'secondary': 'badge-secondary',
         'accent': 'badge-accent',
@@ -38,7 +38,7 @@ https://daisyui.com/components/badge/
 <{{ as }}
     class="
         badge
-        {% if variant %} {{ variantClasses|get_item:variant }}{% endif %}
+        {% if color %} {{ colorClasses|get_item:color }}{% endif %}
         {% if style_ %} {{ styleClasses|get_item:style_ }}{% endif %}
         {% if size %} {{ sizeClasses|get_item:size }}{% endif %}
         {{ class }}

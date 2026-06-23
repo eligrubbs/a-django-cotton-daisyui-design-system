@@ -5,30 +5,94 @@
 {% block content %}
 <div class="mb-8">
     <h2 class="text-3xl font-bold mb-2">Buttons</h2>
-    <p class="text-base-content/70">All available DaisyUI button variants and modifiers.</p>
+    <p class="text-base-content/70">All available DaisyUI button colors and modifiers.</p>
 </div>
 
 <section class="space-y-8 bg-base-100 p-6 rounded-box shadow-sm border border-base-300">
     <div>
-        <h3 class="text-lg font-semibold mb-4">Variants</h3>
+        <h3 class="text-lg font-semibold mb-4">Colors</h3>
         <div class="flex flex-wrap gap-4">
-            <c-ds.button variant="primary">Primary</c-ds.button>
-            <c-ds.button variant="secondary">Secondary</c-ds.button>
-            <c-ds.button variant="accent">Accent</c-ds.button>
-            <c-ds.button variant="neutral">Neutral</c-ds.button>
-            <c-ds.button variant="info">Info</c-ds.button>
-            <c-ds.button variant="success">Success</c-ds.button>
-            <c-ds.button variant="warning">Warning</c-ds.button>
-            <c-ds.button variant="error">Error</c-ds.button>
+            <c-ds.button color="primary">Primary</c-ds.button>
+            <c-ds.button color="secondary">Secondary</c-ds.button>
+            <c-ds.button color="accent">Accent</c-ds.button>
+            <c-ds.button color="neutral">Neutral</c-ds.button>
+            <c-ds.button color="info">Info</c-ds.button>
+            <c-ds.button color="success">Success</c-ds.button>
+            <c-ds.button color="warning">Warning</c-ds.button>
+            <c-ds.button color="error">Error</c-ds.button>
         </div>
     </div>
 
     <div>
-        <h3 class="text-lg font-semibold mb-4">Button Styles (Outline, Ghost, etc.)</h3>
+        <h3 class="text-lg font-semibold mb-4">Soft Buttons</h3>
         <div class="flex flex-wrap gap-4">
-            <c-ds.button variant="primary" _style="outline">Outline</c-ds.button>
-            <c-ds.button variant="secondary" _style="ghost">Ghost</c-ds.button>
-            <c-ds.button variant="accent" _style="link">Link</c-ds.button>
+            <c-ds.button color="primary" style_="soft">Primary</c-ds.button>
+            <c-ds.button color="secondary" style_="soft">Secondary</c-ds.button>
+            <c-ds.button color="accent" style_="soft">Accent</c-ds.button>
+            <c-ds.button color="neutral" style_="soft">Neutral</c-ds.button>
+            <c-ds.button color="info" style_="soft">Info</c-ds.button>
+            <c-ds.button color="success" style_="soft">Success</c-ds.button>
+            <c-ds.button color="warning" style_="soft">Warning</c-ds.button>
+            <c-ds.button color="error" style_="soft">Error</c-ds.button>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Outline Buttons</h3>
+        <div class="flex flex-wrap gap-4">
+            <c-ds.button color="primary" style_="outline">Primary</c-ds.button>
+            <c-ds.button color="secondary" style_="outline">Secondary</c-ds.button>
+            <c-ds.button color="accent" style_="outline">Accent</c-ds.button>
+            <c-ds.button color="neutral" style_="outline">Neutral</c-ds.button>
+            <c-ds.button color="info" style_="outline">Info</c-ds.button>
+            <c-ds.button color="success" style_="outline">Success</c-ds.button>
+            <c-ds.button color="warning" style_="outline">Warning</c-ds.button>
+            <c-ds.button color="error" style_="outline">Error</c-ds.button>
+        </div>
+    </div>
+
+
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Dash Buttons</h3>
+        <div class="flex flex-wrap gap-4">
+            <c-ds.button color="primary" style_="dash">Primary</c-ds.button>
+            <c-ds.button color="secondary" style_="dash">Secondary</c-ds.button>
+            <c-ds.button color="accent" style_="dash">Accent</c-ds.button>
+            <c-ds.button color="neutral" style_="dash">Neutral</c-ds.button>
+            <c-ds.button color="info" style_="dash">Info</c-ds.button>
+            <c-ds.button color="success" style_="dash">Success</c-ds.button>
+            <c-ds.button color="warning" style_="dash">Warning</c-ds.button>
+            <c-ds.button color="error" style_="dash">Error</c-ds.button>
+        </div>
+    </div>
+
+
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Ghost Buttons</h3>
+        <div class="flex flex-wrap gap-4">
+            <c-ds.button color="primary" style_="ghost">Primary</c-ds.button>
+            <c-ds.button color="secondary" style_="ghost">Secondary</c-ds.button>
+            <c-ds.button color="accent" style_="ghost">Accent</c-ds.button>
+            <c-ds.button color="neutral" style_="ghost">Neutral</c-ds.button>
+            <c-ds.button color="info" style_="ghost">Info</c-ds.button>
+            <c-ds.button color="success" style_="ghost">Success</c-ds.button>
+            <c-ds.button color="warning" style_="ghost">Warning</c-ds.button>
+            <c-ds.button color="error" style_="ghost">Error</c-ds.button>
+        </div>
+    </div>
+
+
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Link Buttons</h3>
+        <div class="flex flex-wrap gap-4">
+            <c-ds.button color="primary" style_="link">Primary</c-ds.button>
+            <c-ds.button color="secondary" style_="link">Secondary</c-ds.button>
+            <c-ds.button color="accent" style_="link">Accent</c-ds.button>
+            <c-ds.button color="neutral" style_="link">Neutral</c-ds.button>
+            <c-ds.button color="info" style_="link">Info</c-ds.button>
+            <c-ds.button color="success" style_="link">Success</c-ds.button>
+            <c-ds.button color="warning" style_="link">Warning</c-ds.button>
+            <c-ds.button color="error" style_="link">Error</c-ds.button>
         </div>
     </div>
 
@@ -46,11 +110,21 @@
     <div>
         <h3 class="text-lg font-semibold mb-4">Modifiers</h3>
         <div class="flex flex-wrap gap-4">
-            <c-ds.button variant="primary" modifier="wide">Wide</c-ds.button>
-            <c-ds.button variant="primary" modifier="block">Block</c-ds.button>
-            <c-ds.button variant="primary" modifier="square">Square</c-ds.button>
-            <c-ds.button variant="primary" modifier="circle">Circle</c-ds.button>
+            <c-ds.button color="primary" modifier="wide">Wide</c-ds.button>
+            <c-ds.button color="primary" modifier="block">Block</c-ds.button>
+            <c-ds.button color="primary" modifier="square">Square</c-ds.button>
+            <c-ds.button color="primary" modifier="circle">Circle</c-ds.button>
         </div>
     </div>
+
+    <div>
+        <h3 class="text-lg font-semibold mb-4">Behaviors</h3>
+        <div class="flex flex-wrap gap-4">
+            <c-ds.button color="primary" behavior="active">Active Button</c-ds.button>
+            <c-ds.button color="primary" behavior="disabled">Disabled w/ Class</c-ds.button>
+            <c-ds.button color="primary" disabled="disabled">Disabled w/ Attribute</c-ds.button>
+        </div>
+    </div>
+
 </section>
 {% endblock %}

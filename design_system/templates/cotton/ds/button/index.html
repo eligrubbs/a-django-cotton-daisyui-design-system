@@ -9,12 +9,12 @@ https://daisyui.com/components/button/
 <c-vars
     class=""
     as="button"
-    variant=""
+    color=""
     style_=""
     behavior=""
     size="md"
     modifier=""
-    :variantClasses="{
+    :colorClasses="{
         '': '',
         'neutral': 'btn-neutral',
         'primary': 'btn-primary',
@@ -58,7 +58,7 @@ https://daisyui.com/components/button/
 <{{ as }}
     class="
         btn
-        {{ variantClasses|get_item:variant }}
+        {{ colorClasses|get_item:color }}
         {{ styleClasses|get_item:style_ }}
         {{ behaviorClasses|get_item:behavior }}
         {{ sizeClasses|get_item:size }}
